@@ -2,39 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
   <url>
-    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/normal-1.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/about.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/normal-2.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/blog.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/normal-3.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/interview-001-nblqoq.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/juice-1.html</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/juice-2.html</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/normal-1.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/normal-2.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/normal-3.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/review-001-1a2mpuz.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/posts/t3link-002-nblqoq.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sarakinhceo-gif.github.io/bp-t3b07-mg-night-rv/feed.xml</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

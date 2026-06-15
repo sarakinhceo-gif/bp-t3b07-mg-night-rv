@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta name="description" content="마곡 유흥 후기: 진짜 하는 놈들의 리얼 경험담. 마곡에서 가장 거침없는 유흥 정보를 박제한다. 가격, 분위기, 서비스까지 전부 까발림.">
+    <meta name="keywords" content="마곡 유흥, 마곡 유흥 후기, 마곡 술집, 마곡 클럽, 마곡 야구장, 마곡 맛집, 유흥 정보, 마곡 밤문화">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b07-mg-night-rv.vercel.app">
+    <meta property="og:title" content="마곡 유흥 후기: 거리 위의 진실">
+    <meta property="og:description" content="마곡 유흥 후기: 진짜 하는 놈들의 리얼 경험담. 마곡에서 가장 거침없는 유흥 정보를 박제한다.">
+    <title>마곡 유흥 후기: 정보 — 거리 위의 진실</title>
+    <style>
+        /* ----- RESET & BASE ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            background-color: #1a1a1a;
+            color: #e0dcd0;
+            font-family: 'Courier New', Courier, 'IBM Plex Mono', monospace;
+            line-height: 1.5;
+            padding: 0 20px;
+        }
+        img, svg {
+            max-width: 100%;
+            display: block;
+        }
+        a {
+            color: #f5a623;
+            text-decoration: underline wavy #f5a623 2px;
+            text-underline-offset: 6px;
+        }
+        a:hover {
+            color: #ffd966;
+            text-decoration: none;
+            background: #2a2a2a;
+        }
+
+        /* ----- TYPOGRAPHY (RAW) ----- */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            color: #f0ece4;
+        }
+        h1 {
+            font-size: 4rem;
+            line-height: 0.9;
+            margin: 2rem 0 1rem;
+            border-left: 12px solid #f5a623;
+            padding-left: 1.2rem;
+        }
+        h2 {
+            font-size: 3rem;
+            margin: 2.5rem 0 1rem;
+            border-bottom: 4px double #f5a623;
+            display: inline-block;
+        }
+        h3 {
+            font-size: 2rem;
+            margin: 1.8rem 0 0.8rem;
+        }
+        p {
+            margin: 1.2rem 0;
+            font-size: 1.2rem;
+        }
+        .accent-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #f5a623;
+            background: #2a2a2a;
+            padding: 0.2rem 0.5rem;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        .mono {
+            font-family: 'Courier New', monospace;
+            letter-spacing: -0.5px;
+        }
+
+        /* ----- LAYOUT : FULL BLEED, ASYMMETRIC ----- */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 0;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 2rem;
+        }
+        .container>* {
+            grid-column: 2;
+        }
+        .full-bleed {
+            grid-column: 1 / -1;
+            width: 100%;
+            background: #222;
+            padding: 2rem 1rem;
+            border: 2px dashed #f5a623;
+        }
+        .split-asym {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        /* ----- NAV + HAMBURGER (responsive) ----- */
+        nav {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111;
+            padding: 1.2rem 2rem;
+            border-bottom: 4px solid #f5a623;
+            margin-bottom: 2rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: #e0dcd0;
+            border: 1px solid #444;
+            padding: 0.3rem 1rem;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            background: #f5a623;
+            color: #111;
+            border-color: #f5a623;
+        }
+        .hamburger {
+            display: none;
+            font-size: 2.5rem;
+            background: none;
+            border: 2px solid #f5a623;
+            color: #f5a623;
+            padding: 0.1rem 0.6rem;
+            cursor: pointer;
+        }
+        .tel-link {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: #f5a623;
+            color: #111 !important;
+            padding: 0.2rem 1.2rem;
+            border: 2px solid #f5a623;
+            text-decoration: none !important;
+        }
+        .tel-link:hover {
+            background: #111;
+            color: #f5a623 !important;
+        }
+
+        /* responsive 768 */
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
+            h1 {
+                font-size: 2.8rem;
+            }
+            h2 {
+                font-size: 2.2rem;
+            }
+            .container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .container>* {
+                grid-column: 1;
+            }
+            .full-bleed {
+                grid-column: 1;
+            }
+            .split-asym {
+                grid-template-columns: 1fr;
+            }
+            nav {
+                flex-wrap: wrap;
+                padding: 1rem;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 0.8rem;
+                margin-top: 1rem;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .hamburger {
+                display: inline-block;
+            }
+            .tel-link {
+                font-size: 1.2rem;
+                padding: 0.1rem 1rem;
+            }
+        }
+
+        /* ----- CUSTOM CARDS, FAQ, INFO BLOCKS (brutalist) ----- */
+        .info-card {
+            background: #1f1f1f;
+            border: 4px solid #333;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 12px 12px 0 #0a0a0a;
+            transition: 0.2s;
+        }
+        .info-card:hover {
+            border-color: #f5a623;
+            box-shadow: 8px 8px 0 #f5a623;
+        }
+        .faq-item {
+            border-bottom: 2px dotted #555;
+            padding: 1.5rem 0;
+        }
+        .faq-question {
+            font-size: 1.6rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '⏚';
+            font-size: 2rem;
+            color: #f5a623;
+        }
+        .faq-answer {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            border-left: 6px solid #f5a623;
+            padding-left: 1rem;
+        }
+        .badge {
+            background: #f5a623;
+            color: #111;
+            padding: 0.2rem 1rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 1rem;
+            letter-spacing: 1px;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .stat-item {
+            background: #2a2a2a;
+            padding: 1.5rem 0.5rem;
+            text-align: center;
+            border: 2px solid #f5a623;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #f5a623;
+            line-height: 1;
+        }
+        /* footer */
+        footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 3rem 0 1rem;
+            border-top: 4px double #333;
+            margin-top: 4rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- NAV (동일 디자인, 링크 공통) -->
+        <nav>
+            <div style="font-size:2rem; font-weight:900; color:#f5a623;">MG-RAW</div>
+            <div class="hamburger" id="hamburger" aria-label="메뉴 열기">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">정보</a></li>
+                <li><a href="#">후기</a></li>
+                <li><a href="#">지도</a></li>
+                <li><a href="#" class="tel-link">010-9348-2910</a></li>
+            </ul>
+        </nav>
+
+        <!-- 메인 콘텐츠: 정보 페이지 (지역 시그널 + 상세 정보) -->
+        <h1>마곡 유흥 진실</h1>
+        <div class="accent-text">정보: 거리 위의 원칙</div>
+        <p><span class="badge">2025 업데이트</span> 마곡에서 진짜 도는 놈들의 룰. 가격, 분위기, 서비스, 리스크 — 전부 까발린다. 이 정보는 후기 기반이며, 일부는 익명 제보로 구성됨.</p>
+
+        <!-- FULL BLEED 섹션: 지역 시그널 강하게 -->
+        <div class="full-bleed">
+            <h2 style="margin-top:0;">📍 마곡 핵심 구역</h2>
+            <div class="split-asym">
+                <div>
+                    <p><strong>🔥 역세권 / 단속 빈도</strong><br>마곡역 2번 출구 ~ LG사이언스파크 사이. 단속? 있지만 루트를 알면 피할 수 있다. 새벽 2시 이후 집중.</p>
+                    <p><strong>💰 평균 웨이브</strong><br>기본 20~35 / 서비스 포함 40~60. 바가지 존은 피해라. 이 동네 ‘오빠’ 말고 ‘형’ 찾아라.</p>
+                </div>
+                <div>
+                    <p><span class="accent-text">리얼 타임</span> 03/22 기준: 4곳 영업 중, 2곳 리뉴얼. 콜? 건전한 척 하지만 뒤는 다르다. (제보: 익명의 브로)</p>
+                    <p>✔ <strong>검증된 업소:</strong> B1, M3, 더블유. 그 외는 입구에서 돌아서 나와라.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- INFO CARDS: 상세 정보 블록 (brutalist) -->
+        <div class="info-card">
+            <h3>⛓️ 서비스 & 분위기</h3>
+            <p>“마곡은 타이트함이 미덕이다” – 실제 후기. 분위기는 하드코어한 편, 불만 있으면 바로 컷. 친절한 척 하는 놈들은 거르고, 직진하는 곳이 진짜. 룸, 바, 홀 각각 다른 룰. 대부분 1차 2시간 기본, 추가는 협상.</p>
+            <p><span class="badge">경고</span> 사진 vs 실물 70% 매칭. 비싼 곳일수록 퀄리티 보장 안 됨. 우리가 박제한 곳만 가라.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🧾 가격표 (2025.03 기준)</h3>
+            <ul style="list-style: none; font-size:1.3rem; line-height: 2;">
+                <li>🔸 기본 입장 / 주류 포함: 25만 원~</li>
+                <li>🔸 VIP / 병 서비스: 50~80만 원</li>
+                <li>🔸 콜/아웃: 별도 협상, 최소 40만</li>
+                <li>🔸 팁/서비스: 5~10만 (강요 아님, 눈치)</li>
+            </ul>
+            <p class="mono" style="background:#111; padding:0.5rem;">※ 위 가격은 후기 집계 평균. 실제와 다를 수 있음. 바가지는 우리가 깬다.</p>
+        </div>
+
+        <!-- FAQ 블록: 정보 + 시그널 -->
+        <h2>🎯 진짜 하는 놈들을 위한 FAQ</h2>
+        <div class="faq-item">
+            <div class="faq-question">마곡, 밤샘 가능?</div>
+            <div class="faq-answer">가능. 단 새벽 4시 이후 문 닫는 곳 많음. B1은 6시까지 오픈. 단속은 있지만 루트 안다. (자세한 건 전화로)</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">초보도 괜찮아?</div>
+            <div class="faq-answer">당연하지. 근데 찍히면 망한다. 찐한 걸 원하면 ‘M3’ 추천. 분위기 헤비, 서비스 직진. 첫 방문은 전화 필수.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">제일 핫한 곳?</div>
+            <div class="faq-answer"><strong>더블유 (W)</strong> – 요즘 가장 뜨거움. 가격대 30~45. 단속 회피 기술 좋음. 단, 예약 필수.</div>
+        </div>
+
+        <!-- 통계/수치 정보: 지역 시그널 극대화 -->
+        <div class="stat-grid">
+            <div class="stat-item"><span class="stat-number">12</span><br>검증 업소</div>
+            <div class="stat-item"><span class="stat-number">83%</span><br>재방문율</div>
+            <div class="stat-item"><span class="stat-number">4.2</span><br>평점 (5점 만점)</div>
+            <div class="stat-item"><span class="stat-number">7</span><br>단속 회피 루트</div>
+        </div>
+
+        <!-- 추가 상세: contact / 지역 시그널 -->
+        <div style="background:#222; padding:1.5rem; border-left:12px solid #f5a623; margin:2rem 0;">
+            <p style="font-size:1.8rem; font-weight:bold;">☎️ 라인 개방</p>
+            <p>진짜 정보는 전화로. 가격, 위치, 후기, 단속까지. <a href="#" class="tel-link" style="display:inline-block; margin-top:0.5rem;">010-9348-2910</a> (형만 받음)</p>
+            <p class="mono">*카톡 아이디: mgbro_real (검증된 제보자만)</p>
+        </div>
+
+        <footer>
+            <p>마곡 유흥 후기 — 거리 위의 진실. 모든 정보는 익명 제보 및 직접 경험 기반. 2025.03.22 업데이트.</p>
+            <p style="margin-top:0.5rem;">⛓️ 이 페이지는 PBN의 일부입니다. brutalism. raw. real.</p>
+        </footer>
+    </div>
+
+    <!-- 햄버거 메뉴 토글 (동일 패턴) -->
+    <script>
+        (function() {
+            const hamburger
+</body>
+</html>
